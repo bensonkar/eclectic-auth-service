@@ -30,7 +30,7 @@ public class AuthorizationResource {
     @PostConstruct
     public void init() {
         try {
-            User username = userRepository.findByUsername("a");
+            User username = userRepository.findByUsername("admin");
             if (null == username) {
                 User user = new User();
                 user.setUsername("admin");
